@@ -32,7 +32,7 @@ app.get("/api/version-check", async (req, res) => {
 // API to serve the bundle
 app.get("/api/download-bundle", async (req, res) => {
     try {
-        const fileName = "index.bundle.js"; // Replace with the actual file name
+        const fileName = "index.ios.bundle"; // Replace with the actual file name
         const file = storage.bucket(bucketName).file(fileName);
 
         res.setHeader("Content-Disposition", `attachment; filename=${fileName}`);
